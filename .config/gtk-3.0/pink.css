@@ -1,0 +1,122 @@
+/* Pink Theme Variables */
+@define-color main_pink rgb(254, 194, 200);
+@define-color dark_pink rgb(150, 80, 100);
+@define-color border_pink rgb(200, 140, 160);
+@define-color button_pink rgb(240, 180, 190);
+@define-color accent_pink rgb(255, 210, 215);
+@define-color folder_pink rgb(220, 160, 170);
+
+/* Global Styling */
+* {
+    background-color: @main_pink;
+    color: @dark_pink;
+    font-family: "FiraCode Nerd Font", Sans;
+}
+
+/* Window and Frames */
+window, .window-frame {
+    background-color: @main_pink;
+    border: 1px solid @border_pink;
+}
+
+/* Buttons */
+button {
+    background-color: @button_pink;
+    color: @dark_pink;
+    border: 1px solid @border_pink;
+}
+
+button:hover {
+    background-color: @accent_pink;
+}
+
+button:active {
+    background-color: @dark_pink;
+    color: @main_pink;
+}
+
+/* Entries and Text Fields */
+entry, textview {
+    background-color: white;
+    color: @dark_pink;
+    border: 1px solid @border_pink;
+}
+
+entry:focus, textview:focus {
+    border-color: @accent_pink;
+}
+
+/* Tree View and Sidebar */
+treeview, .sidebar {
+    background-color: @main_pink;
+    color: @dark_pink;
+}
+
+treeview:selected, treeview:selected:focus {
+    background-color: @button_pink;
+    color: @dark_pink;
+}
+
+/* Folders */
+.folder {
+    background-color: @folder_pink;
+    color: @dark_pink;
+}
+
+/* Scrollbars */
+scrollbar slider {
+    background-color: @button_pink;
+}
+
+scrollbar trough {
+    background-color: @main_pink;
+}
+
+/* Selected Items */
+.view:selected {
+    background-color: @button_pink;
+    color: @dark_pink;
+}
+
+/* Thunar Specific */
+file-chooser-button {
+    background-color: @button_pink;
+}
+
+file-chooser-button:hover {
+    background-color: @accent_pink;
+}
+
+.toolbar {
+    background-color: @main_pink;
+    border-bottom: 1px solid @border_pink;
+}
+
+/* Paned Separators */
+paned > separator {
+    background-color: @border_pink;
+}
+
+/* Icon View */
+.icon-view {
+    background-color: @main_pink;
+    color: @dark_pink;
+}
+
+/* Menus */
+menu, menuitem {
+    background-color: @main_pink;
+    color: @dark_pink;
+    border: 1px solid @border_pink;
+}
+
+menuitem:hover {
+    background-color: @button_pink;
+}
+
+/* Tooltips */
+tooltip {
+    background-color: @button_pink;
+    color: @dark_pink;
+    border: 1px solid @border_pink;
+}
