@@ -1,0 +1,14 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ *
+ * Editor : Addiv (@Addiv420)
+ * 
+ * Fonts
+ *
+ **/
+
+* {
+    font: "FiraCode Nerd Font 10";
+}
