@@ -5,11 +5,11 @@
 		"focusBorder": "#F06292",
 		"foreground": "#000000",
 
-		// █████ Menüleiste (File, Edit, Selection) █████
-		"menubar.selectionBackground": "#F48FB1", // Hintergrund der ausgewählten Menüpunkte
-		"menubar.selectionForeground": "#000000", // Text der ausgewählten Menüpunkte
-		"menubar.background": "#F8BBD0", // Hintergrund der Menüleiste
-		"menubar.foreground": "#000000", // Text der Menüleiste
+		// █████ Menüleiste & Titelleiste █████
+		"titleBar.activeBackground": "#F8BBD0",
+		"titleBar.activeForeground": "#D50061",
+		"titleBar.inactiveBackground": "#F8BBD0",
+		"titleBar.inactiveForeground": "#880E4F",
 
 		// █████ Editor █████
 		"editor.background": "#FEC2C8",
@@ -28,20 +28,20 @@
 		"editorGutter.deletedBackground": "#F44336",
 
 		// █████ Suchbalken █████
-		"editorWidget.background": "#F8BBD0", // Hintergrund der Suchbox
-		"editorWidget.foreground": "#000000", // Text in der Suchbox
-		"input.background": "#F8BBD0", // Hintergrund der Eingabefelder
-		"input.foreground": "#000000", // Text in den Eingabefeldern
-		"inputOption.activeBorder": "#F06292", // Aktive Suchoptionen
-		"inputValidation.infoBackground": "#F8BBD0", // Info-Hintergrund
-		"inputValidation.warningBackground": "#FFF3E0", // Warnung-Hintergrund
-		"inputValidation.errorBackground": "#FFCDD2", // Fehler-Hintergrund
+		"editorWidget.background": "#F8BBD0",
+		"editorWidget.foreground": "#000000",
+		"input.background": "#F8BBD0",
+		"input.foreground": "#000000",
+		"inputOption.activeBorder": "#F06292",
+		"inputValidation.infoBackground": "#F8BBD0",
+		"inputValidation.warningBackground": "#FFF3E0",
+		"inputValidation.errorBackground": "#FFCDD2",
 
-		// █████ Breadcrumbs (Scope) █████
-		"breadcrumb.background": "#F8BBD0", // Hintergrund der Breadcrumbs
-		"breadcrumb.foreground": "#880E4F", // Text der Breadcrumbs
-		"breadcrumb.activeSelectionForeground": "#D50061", // Aktive Auswahl
-		"breadcrumb.focusForeground": "#F06292", // Fokussierte Auswahl
+		// █████ Breadcrumbs █████
+		"breadcrumb.background": "#F8BBD0",
+		"breadcrumb.foreground": "#880E4F",
+		"breadcrumb.activeSelectionForeground": "#D50061",
+		"breadcrumb.focusForeground": "#F06292",
 
 		// █████ Terminal █████
 		"terminal.background": "#F8BBD0",
@@ -56,14 +56,14 @@
 		"terminal.ansiCyan": "#00BCD4",
 		"terminal.ansiWhite": "#000000",
 
-		// █████ Panels (Terminal, Problems, Output, Debug Console, Ports) █████
-		"panel.background": "#F8BBD0", // Hintergrund aller Panels
-		"panelTitle.activeForeground": "#D50061", // Aktiver Tab-Titel
-		"panelTitle.inactiveForeground": "#880E4F", // Inaktiver Tab-Titel
-		"panelSectionHeader.background": "#F48FB1", // Header-Hintergrund
-		"panelSectionHeader.foreground": "#000000", // Header-Text
+		// █████ Panels █████
+		"panel.background": "#F8BBD0",
+		"panelTitle.activeForeground": "#D50061",
+		"panelTitle.inactiveForeground": "#880E4F",
+		"panelSectionHeader.background": "#F48FB1",
+		"panelSectionHeader.foreground": "#000000",
 
-		// █████ Source Control (Git) █████
+		// █████ Source Control █████
 		"gitDecoration.addedResourceForeground": "#4CAF50",
 		"gitDecoration.modifiedResourceForeground": "#FFC107",
 		"gitDecoration.deletedResourceForeground": "#F44336",
