@@ -1,0 +1,173 @@
+{
+	"name": "Addiv's Pink - Menu Bar Fix",
+	"colors": {
+		// █████ Global █████
+		"focusBorder": "#F06292",
+		"foreground": "#000000",
+
+		// █████ Menüleiste (File, Edit, Selection) █████
+		"menubar.selectionBackground": "#F48FB1", // Hintergrund der ausgewählten Menüpunkte
+		"menubar.selectionForeground": "#000000", // Text der ausgewählten Menüpunkte
+		"menubar.background": "#F8BBD0", // Hintergrund der Menüleiste
+		"menubar.foreground": "#000000", // Text der Menüleiste
+
+		// █████ Editor █████
+		"editor.background": "#FEC2C8",
+		"editor.foreground": "#880E4F",
+		"editor.selectionBackground": "#F48FB1",
+		"editor.selectionHighlightBackground": "#F8BBD080",
+		"editor.lineHighlightBackground": "#F8BBD0",
+		"editorLineNumber.foreground": "#D50061",
+		"editorBracketHighlight.foreground1": "#F06292",
+		"editorBracketHighlight.foreground2": "#F48FB1",
+		"editorBracketHighlight.foreground3": "#FCE4EC",
+		"editorError.foreground": "#D32F2F",
+		"editorWarning.foreground": "#FF8F00",
+		"editorGutter.addedBackground": "#4CAF50",
+		"editorGutter.modifiedBackground": "#FFC107",
+		"editorGutter.deletedBackground": "#F44336",
+
+		// █████ Suchbalken █████
+		"editorWidget.background": "#F8BBD0", // Hintergrund der Suchbox
+		"editorWidget.foreground": "#000000", // Text in der Suchbox
+		"input.background": "#F8BBD0", // Hintergrund der Eingabefelder
+		"input.foreground": "#000000", // Text in den Eingabefeldern
+		"inputOption.activeBorder": "#F06292", // Aktive Suchoptionen
+		"inputValidation.infoBackground": "#F8BBD0", // Info-Hintergrund
+		"inputValidation.warningBackground": "#FFF3E0", // Warnung-Hintergrund
+		"inputValidation.errorBackground": "#FFCDD2", // Fehler-Hintergrund
+
+		// █████ Breadcrumbs (Scope) █████
+		"breadcrumb.background": "#F8BBD0", // Hintergrund der Breadcrumbs
+		"breadcrumb.foreground": "#880E4F", // Text der Breadcrumbs
+		"breadcrumb.activeSelectionForeground": "#D50061", // Aktive Auswahl
+		"breadcrumb.focusForeground": "#F06292", // Fokussierte Auswahl
+
+		// █████ Terminal █████
+		"terminal.background": "#F8BBD0",
+		"terminal.foreground": "#000000",
+		"terminal.ansiBlack": "#F8BBD0",
+		"terminal.ansiBrightBlack": "#F48FB1",
+		"terminal.ansiRed": "#F44336",
+		"terminal.ansiGreen": "#4CAF50",
+		"terminal.ansiYellow": "#FFC107",
+		"terminal.ansiBlue": "#2196F3",
+		"terminal.ansiMagenta": "#E91E63",
+		"terminal.ansiCyan": "#00BCD4",
+		"terminal.ansiWhite": "#000000",
+
+		// █████ Panels (Terminal, Problems, Output, Debug Console, Ports) █████
+		"panel.background": "#F8BBD0", // Hintergrund aller Panels
+		"panelTitle.activeForeground": "#D50061", // Aktiver Tab-Titel
+		"panelTitle.inactiveForeground": "#880E4F", // Inaktiver Tab-Titel
+		"panelSectionHeader.background": "#F48FB1", // Header-Hintergrund
+		"panelSectionHeader.foreground": "#000000", // Header-Text
+
+		// █████ Source Control (Git) █████
+		"gitDecoration.addedResourceForeground": "#4CAF50",
+		"gitDecoration.modifiedResourceForeground": "#FFC107",
+		"gitDecoration.deletedResourceForeground": "#F44336",
+
+		// █████ Buttons & Controls █████
+		"button.background": "#F06292",
+		"button.foreground": "#000000",
+		"button.secondaryBackground": "#F48FB1",
+		"button.secondaryForeground": "#000000",
+		"toolbar.hoverBackground": "#F8BBD0",
+
+		// █████ Activity Bar █████
+		"activityBar.background": "#F48FB1",
+		"activityBar.foreground": "#000000",
+		"activityBar.inactiveForeground": "#880E4F",
+		"activityBarBadge.background": "#D50061",
+		"activityBarBadge.foreground": "#000000",
+
+		// █████ Sidebar & Explorer █████
+		"sideBar.background": "#F8BBD0",
+		"sideBar.foreground": "#000000",
+		"sideBarSectionHeader.background": "#F48FB1",
+		"sideBarSectionHeader.foreground": "#000000",
+		"tree.indentGuidesStroke": "#D50061",
+		"list.activeSelectionBackground": "#F48FB1",
+		"list.hoverBackground": "#FCE4EC",
+		"list.inactiveSelectionBackground": "#F8BBD0",
+
+		// █████ Tabs █████
+		"tab.activeBackground": "#FEC2C8",
+		"tab.activeForeground": "#000000",
+		"tab.inactiveBackground": "#F8BBD0",
+		"tab.inactiveForeground": "#000000",
+		"tab.border": "#F06292",
+		"editorGroupHeader.tabsBackground": "#FEC2C8",
+		"editorGroupHeader.tabsBorder": "#F06292",
+
+		// █████ Menüs & Dropdowns █████
+		"menu.background": "#F8BBD0",
+		"menu.foreground": "#000000",
+		"menu.selectionBackground": "#F48FB1",
+		"menu.selectionForeground": "#000000",
+		"menu.border": "#F06292",
+		"dropdown.background": "#F8BBD0",
+		"dropdown.foreground": "#000000",
+
+		// █████ Status Bar █████
+		"statusBar.background": "#F48FB1",
+		"statusBar.foreground": "#000000",
+		"statusBarItem.remoteBackground": "#F06292",
+		"statusBarItem.remoteForeground": "#000000"
+	},
+	"tokenColors": [
+		{
+			"name": "Comments",
+			"scope": ["comment", "punctuation.definition.comment"],
+			"settings": {
+				"foreground": "#C2185B",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Functions",
+			"scope": ["entity.name.function", "meta.function-call"],
+			"settings": {
+				"foreground": "#D50061"
+			}
+		},
+		{
+			"name": "Keywords",
+			"scope": ["keyword", "storage.modifier"],
+			"settings": {
+				"foreground": "#AD1457",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Variables",
+			"scope": ["variable", "variable.parameter"],
+			"settings": {
+				"foreground": "#D81B60"
+			}
+		},
+		{
+			"name": "Strings",
+			"scope": ["string"],
+			"settings": {
+				"foreground": "#E91E63"
+			}
+		},
+		{
+			"name": "Numbers",
+			"scope": ["constant.numeric"],
+			"settings": {
+				"foreground": "#EC407A"
+			}
+		},
+		{
+			"name": "Classes",
+			"scope": ["entity.name.class", "entity.name.type.class"],
+			"settings": {
+				"foreground": "#AD1457",
+				"fontStyle": "bold"
+			}
+		}
+	]
+}
