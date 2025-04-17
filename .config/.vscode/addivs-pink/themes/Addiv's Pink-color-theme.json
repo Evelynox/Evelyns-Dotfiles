@@ -6,9 +6,9 @@
 		"foreground": "#000000",
 
 		// █████ Menüleiste & Titelleiste █████
-		"titleBar.activeBackground": "#F8BBD0",
+		"titleBar.activeBackground": "#F48FB1",
 		"titleBar.activeForeground": "#D50061",
-		"titleBar.inactiveBackground": "#F8BBD0",
+		"titleBar.inactiveBackground": "#F06292",
 		"titleBar.inactiveForeground": "#880E4F",
 
 		// █████ Editor █████
@@ -98,7 +98,7 @@
 		"tab.inactiveBackground": "#F8BBD0",
 		"tab.inactiveForeground": "#000000",
 		"tab.border": "#F06292",
-		"editorGroupHeader.tabsBackground": "#FEC2C8",
+		"editorGroupHeader.tabsBackground": "#F8BBD0",
 		"editorGroupHeader.tabsBorder": "#F06292",
 
 		// █████ Menüs & Dropdowns █████
