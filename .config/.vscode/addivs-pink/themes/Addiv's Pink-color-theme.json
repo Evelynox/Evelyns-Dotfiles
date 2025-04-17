@@ -1,5 +1,5 @@
 {
-	"name": "Addiv's Pink - Menu Bar Fix",
+	"name": "Addiv's Pink",
 	"colors": {
 		// █████ Global █████
 		"focusBorder": "#F06292",
@@ -42,6 +42,8 @@
 		"breadcrumb.foreground": "#880E4F",
 		"breadcrumb.activeSelectionForeground": "#D50061",
 		"breadcrumb.focusForeground": "#F06292",
+		"breadcrumb.border": "#ffffff",
+		"editorGroupHeader.border": "#f18bb3",
 
 		// █████ Terminal █████
 		"terminal.background": "#F8BBD0",
