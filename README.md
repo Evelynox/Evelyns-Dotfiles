@@ -1,40 +1,51 @@
-# Addiv's Pink - A Pink-Themed Arch Linux Setup with Hyprland
+# Addiv's Pink – Hyprland Theme
 
-Welcome to **Addiv's Pink**, a beautifully crafted, all-pink theme for Arch Linux running the Hyprland compositor. This setup is designed for those who love a cohesive, aesthetically pleasing desktop environment with a touch of femininity and modernity.
-
-This project includes a customized configuration for **Waybar** (based on [sejjy's Mechabar](https://github.com/sejjy/mechabar)) and **Rofi** (using [adi1090x's Rofi config](https://github.com/adi1090x/rofi)), both heavily modified to fit the pink theme. Whether you're a fan of pastel pinks or vibrant magentas, this setup will bring your desktop to life.
-
----
-
-## Features
-
-- **Pink-themed Hyprland setup**: A cohesive and visually stunning pink theme for your Arch Linux desktop.
-- **Customized Waybar**: Based on [sejjy's Mechabar](https://github.com/sejjy/mechabar), modified to match the pink theme with improved functionality and aesthetics.
-- **Rofi Launcher**: Using [adi1090x's Rofi config](https://github.com/adi1090x/rofi), customized to align with the pink theme for a seamless user experience.
-- **Easy to Install**: Follow the installation instructions below to get started quickly.
+A beautifully soft and fully pink desktop theme for Hyprland on Arch Linux.  
+Crafted for elegance, readability, and a cohesive feminine look – this setup brings a cute yet functional aesthetic to your Linux experience.
 
 ---
 
-## Screenshots
+## 📸 Preview
 
 ![Desktop Preview](screenshots/desktop.png)  
-*Addiv's Pink desktop with customized Waybar and Rofi.*
+*Active Desktop with Addiv's Pink*
 
 ![Rofi Menu](screenshots/rofi.png)  
-*Pink-themed Rofi launcher.*
+*Rofi menu with fully themed pink style*
 
 ---
 
-## Installation
+## ✨ Features
 
-### Prerequisites
-- Arch Linux (or an Arch-based distribution) installed.
-- Hyprland compositor installed and configured.
-- Git installed to clone this repository.
+- Fully themed **Hyprland** desktop
+- Custom **Waybar** (based on Mechabar) with pink styling
+- Custom **Rofi** (based on adi1090x configs) to match the overall aesthetic
+- Cohesive pink tones across all elements
+- Clean layout, ideal for daily use and customization
 
-### Steps
+---
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/addivs-pink.git
-   cd addivs-pink
+## 🔧 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Addiv420/Addivs-Pink
+cd Addivs-Pink
+```
+
+Follow the instructions inside the repo to apply the config for:
+- Hyprland
+- Waybar
+- Rofi
+
+> ⚠️ Prerequisites: Arch Linux (or based), Hyprland, Waybar, Rofi, git
+
+---
+
+## 📃 License
+
+[GNU General Public License v3.0](LICENSE.md)
+
+---
+
+Made with 💗 by Addiv
