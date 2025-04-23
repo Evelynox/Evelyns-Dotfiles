@@ -34,9 +34,23 @@ cd Addivs-Pink
 ```
 
 Follow the instructions inside the repo to apply the config for:
-- Hyprland
-- Waybar
-- Rofi
+- hyprland (window manager)
+- waybar (statusbar)
+- rofi (app launcher)
+
+<summary>Optional, but recommended</summary>
+- ttf-firacode-nerd    #main font
+- hyprshot (taking screenshots)
+hyprpaper         #wallpaper
+hyprlock       #screen locker
+hypridle       #screen idler
+waybar            #statusbarw
+thunar            #file manager
+tumbler           #thunar media preview
+ffmpegthumbnailer #thunar multimedia thumbnails
+fastfetch-git     #terminal decoration
+noto-fonts-emoji  #emoji font
+rofimoji       #emoji picker
 
 > ⚠️ Prerequisites: Arch Linux (or based), Hyprland, Waybar, Rofi, git
 
