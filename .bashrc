@@ -9,4 +9,5 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-fastfetch --color-title blue --logo-color-1 black --separator " - " --color-separator cyan
+fastfetch
+export PATH=$PATH:~/.spicetify
