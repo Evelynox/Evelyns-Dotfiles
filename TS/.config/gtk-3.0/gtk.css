@@ -1,0 +1,6 @@
+@import url("pink.css");
+
+window#waybar {
+    all: unset;
+}
+

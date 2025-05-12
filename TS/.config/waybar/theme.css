@@ -1,0 +1,35 @@
+/* Hauptfarben */
+@define-color main-fg         #000000;    /* Textfarbe: Schwarz */
+@define-color main-bg         rgb(54, 209, 252);    /* Hintergrund: Pink */
+@define-color main-br         #FEC2C8;    /* Rahmen: Pink */
+
+/* Farben bei Aktivierung/Hover */
+@define-color active-bg       #FEC2C8;
+@define-color active-fg       #000000;
+@define-color hover-bg        #FEC2C8;
+@define-color hover-fg        #000000;
+
+/* Standardfarben */
+@define-color white           #ffffff;
+@define-color black           #000000;
+
+/* Modul Farben */
+@define-color module-fg       #000000;    /* Modultext: Schwarz */
+@define-color workspaces      #FEC2C8;
+@define-color cpuinfo         #FEC2C8;
+@define-color memory          #FEC2C8;
+@define-color cpu             #FEC2C8;
+@define-color distro-fg       #000000;    /* Distro-Text: Schwarz */
+@define-color distro-bg       #FEC2C8;
+@define-color time            #FEC2C8;
+@define-color date            #FEC2C8;
+@define-color tray            #FEC2C8;
+@define-color pulseaudio      #FEC2C8;
+@define-color backlight       #FEC2C8;
+@define-color battery         #FEC2C8;
+@define-color power           #FEC2C8;
+
+/* Statusfarben */
+@define-color warning         #FEC2C8;
+@define-color critical        #FEC2C8;
+@define-color charging        #FEC2C8;

@@ -1,0 +1,433 @@
+/* Globale Stile */
+* {
+  background-color: rgb(54, 209, 252);
+  font-family: "FiraCode Nerd Font", Sans;
+  font-weight: bold;
+  min-height: 0;
+  padding: 0;
+  border: none;
+  margin: 0;
+  color: #000000; /* Hauptfarbe für Text */
+}
+
+@import "theme.css";
+
+/* === Haupt-Hintergrund === */
+window#waybar {
+  background: rgb(54, 209, 252); /* Hauptfarbe für Hintergrund */
+}
+
+/* === Drop Shadow === */
+window#waybar > box {
+  background-color: transparent;
+  box-shadow: 0 0 2px 1px rgba(54, 209, 252, 1);
+  margin: 2px;
+}
+
+/* === Tooltip === */
+tooltip {
+  background: rgb(54, 209, 252); /* Hauptfarbe für Tooltip-Hintergrund */
+  border: solid;
+  border-width: 1.5px;
+  border-radius: 8px;
+  border-color: rgb(54, 209, 252); /* Hauptfarbe für Tooltip-Rand */
+}
+tooltip label {
+  color: #000000; /* Hauptfarbe für Tooltip-Text */
+  font-weight: normal;
+  margin: -1.5px 3px;
+}
+
+/* === Workspace Buttons === */
+#workspaces button {
+  color: #000000; /* Hauptfarbe für Button-Text */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: none;
+  margin: 2px 0;
+  padding: 0 2px;
+}
+#workspaces button:hover {
+  color: #000000;
+  background: rgba(54, 209, 252, 0.2); /* Leicht rosa Hintergrund beim Hovern */
+}
+#workspaces button.active {
+  color: rgb(54, 209, 252);
+  background-color: rgb(254, 194, 200); /* Etwas stärker rosa Hintergrund für aktive Buttons */
+}
+
+/* === Allgemein === */
+#custom-ws,
+#workspaces,
+#window,
+#custom-cpuinfo,
+#memory,
+#cpu,
+#idle_inhibitor,
+#clock,
+#custom-wifi,
+#bluetooth,
+#custom-update,
+#custom-media,
+#pulseaudio,
+#backlight,
+#battery,
+#custom-power {
+  opacity: 1;
+  color: #000000; /* Hauptfarbe für Module */
+  padding: 0 4px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+#custom-left1,
+#custom-left2,
+#custom-left3,
+#custom-left4,
+#custom-left5,
+#custom-left6,
+#custom-left7,
+#custom-left8 {
+  margin-bottom: 0;
+  text-shadow: -2px 0 2px rgba(0, 0, 0, 0.5);
+}
+
+#custom-right1,
+#custom-right2,
+#custom-right3,
+#custom-right4,
+#custom-right5 {
+  margin-bottom: 0;
+  padding-right: 3px;
+  text-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* === Module === */
+
+/* == Window Icon == */
+
+#custom-ws {
+  background: rgb(54, 209, 252);
+}
+
+/* == Workspaces == */
+
+#custom-left1 {
+  color: rgb(54, 209, 252);
+  background: rgb(54, 209, 252);
+  margin-bottom: 0;
+  padding-left: 2px;
+}
+#workspaces {
+  background: rgb(54, 209, 252);
+}
+#custom-right1 {
+  color: rgb(54, 209, 252);
+  background: rgb(54, 209, 252);
+  text-shadow: 3px 0 2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 0;
+}
+
+/* == Temperature == */
+
+#custom-paddc {
+  padding-right: 22px;
+}
+#custom-left2 {
+  color: rgb(54, 209, 252);
+  background: rgb(54, 209, 252);
+  padding-left: 3px;
+}
+#custom-cpuinfo {
+  background: rgb(54, 209, 252);
+  padding-left: 1px;
+  padding-right: 0;
+}
+
+/* == Memory == */
+
+#custom-left3 {
+  color: rgb(254, 194, 200);
+  background: rgb(54, 209, 252);
+  padding-left: 3px;
+}
+#memory {
+  background: rgb(254, 194, 200);
+  padding-left: 1px;
+  padding-right: 0;
+}
+#memory.warning {
+  color: rgb(254, 100, 100); /* Warnfarbe leicht angepasst */
+}
+#memory.critical {
+  color: rgb(254, 50, 50); /* Kritische Farbe noch deutlicher */
+}
+
+/* == CPU == */
+
+#custom-left4 {
+  color: rgb(255, 255, 255);
+  background: rgb(254, 194, 200);
+  padding-left: 3px;
+}
+#cpu {
+  background: rgb(255, 255, 255);
+}
+#custom-leftin1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: -1px;
+}
+
+/* == Distro Icon == */
+
+#custom-left5 {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  text-shadow: -2px 0 2px rgba(0, 0, 0, 0.6);
+  margin-bottom: -2px;
+  padding-left: 3px;
+}
+#custom-distro {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  margin: 0 -1px -2px 0;
+  padding: 0 0 0 3px;
+  text-shadow: 0 0 1.5px rgba(0, 0, 0, 1);
+}
+#custom-right2 {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  margin-bottom: -2px;
+}
+
+/* == Time == */
+
+#custom-rightin1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: -1px;
+}
+#idle_inhibitor {
+  background: rgb(255, 255, 255);
+  margin-right: -2px;
+  padding: 0 0 0 7px;
+}
+#idle_inhibitor:hover {
+  color: rgb(255, 255, 255); /* Hellere Variante beim Hovern */
+  text-shadow: none;
+  box-shadow: none;
+}
+#clock.time {
+  background: rgb(255, 255, 255);
+  padding: 0 3px 0 0;
+}
+#custom-right3 {
+  color: rgb(255, 255, 255);
+  background: rgb(254, 194, 200);
+}
+
+/* == Date == */
+
+#clock.date {
+  background: rgb(254, 194, 200);
+}
+#clock.date:hover {
+  color: rgb(10, 10, 10); /* Hellere Variante beim Hovern */
+  text-shadow: none;
+  box-shadow: none;
+}
+#custom-right4 {
+  color: rgb(254, 194, 200);
+  background: rgb(54, 209, 252);
+}
+
+/* == Tray == */
+
+#custom-wifi {
+  padding-left: 5px;
+  padding-right: 8px;
+  background: rgb(54, 209, 252);
+}
+#custom-wifi:hover {
+  color: rgb(10, 10, 10); /* Hellere Variante beim Hovern */
+  text-shadow: none;
+  box-shadow: none;
+}
+
+#bluetooth {
+  padding-right: 5px;
+  background: rgb(54, 209, 252);
+}
+#bluetooth:hover {
+  color: rgb(254, 220, 220); /* Hellere Variante beim Hovern */
+  text-shadow: none;
+  box-shadow: none;
+}
+
+#custom-update {
+  padding-right: 8px;
+  background: rgb(54, 209, 252);
+}
+#custom-update:hover {
+  color: rgb(50, 50, 50); /* Hellere Variante beim Hovern */
+  text-shadow: none;
+  box-shadow: none;
+}
+#custom-right5 {
+  color: rgb(54, 209, 252);
+  background: rgb(54, 209, 252);
+}
+
+/* == Media Info == */
+
+#custom-media {
+  font-weight: normal;
+  background-color: rgb(54, 209, 252);
+  padding-right: 8px;
+  padding-left: 8px;
+}
+#custom-media:hover {
+  color: rgb(10, 10, 10); /* Hellere Variante beim Hovern */
+  text-shadow: none;
+  box-shadow: none;
+}
+
+/* == Output Device == */
+
+#custom-left6 {
+  color: rgb(54, 209, 252);
+  background: rgb(54, 209, 252);
+  padding-left: 3px;
+}
+#pulseaudio {
+  background: rgb(54, 209, 252);
+}
+#pulseaudio:hover {
+  color: rgb(10, 10, 10); /* Hellere Variante beim Hovern */
+  text-shadow: none;
+  box-shadow: none;
+}
+
+/* == Brightness == */
+
+#custom-left7 {
+  color: rgb(54, 209, 252);
+  background: rgb(54, 209, 252);
+  padding-left: 2px;
+}
+#backlight {
+  background: rgb(54, 209, 252);
+}
+
+/* == Battery == */
+
+#custom-left8 {
+  color: rgb(54, 209, 252);
+  background: rgb(54, 209, 252);
+  padding-left: 2px;
+}
+#battery {
+  color: rgb(54, 209, 252);
+  background: rgb(54, 209, 252);
+}
+#battery.warning {
+  color: rgb(254, 100, 100); /* Warnfarbe leicht angepasst */
+}
+#battery.critical {
+  color: rgb(254, 50, 50); /* Kritische Farbe noch deutlicher */
+}
+#battery.charging {
+  color: rgb(200, 254, 200); /* Farbe für Ladevorgang */
+}
+
+/* == Power Button == */
+
+#custom-leftin2 {
+  color: rgb(54, 209, 252);
+  background: rgb(54, 209, 252);
+  margin-bottom: -1px;
+}
+#custom-power {
+  color: rgb(0, 0, 0);
+  background: rgb(70, 230, 255);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 0 2px 1px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 2px 4px 2px 0;
+  padding: 0 6px 0 9px;
+}
+#custom-power:hover {
+  color: rgb(10, 10, 10); /* Hellere Variante beim Hovern */
+  background: rgba(70, 230, 255, 0.2);
+  text-shadow: none;
+  box-shadow: none;
+}
+
+/* <<--< SCHRIFTGRÖSSEN >-->> */
+
+/*
+  Schriftgrößen für Module und Trennzeichen können problematisch sein.
+  Problematisch heißt, dass sie möglicherweise nicht richtig ausgerichtet sind,
+  wenn nur ganze Zahlen verwendet werden.
+
+  Wenn du sie ändern möchtest, solltest du nur
+  die ganzen Zahlen anpassen und die Dezimalstellen so lassen, wie sie sind,
+  es sei denn, du weißt, was du tust.
+*/
+
+/* Workspace-Symbol und -Buttons, Fenster- und Medientitel */
+* {
+  font-size: 10px;
+}
+
+/* Linke und rechte Pfeile */
+#custom-left1,
+#custom-left2,
+#custom-left3,
+#custom-left4,
+#custom-left5,
+#custom-left6,
+#custom-left7,
+#custom-left8,
+#custom-right1,
+#custom-right2,
+#custom-right3,
+#custom-right4,
+#custom-right5 {
+  font-size: 14.68px;
+}
+
+/* Linke und rechte Inverse */
+#custom-leftin1,
+#custom-leftin2,
+#custom-rightin1 {
+  background-color: rgb(255, 255, 255);
+  font-size: 15.5px;
+}
+
+/* Distro-Symbol */
+#custom-distro {
+  font-size: 14.6px;
+}
+
+/* Distro-Pfeile Override */
+#custom-left5,
+#custom-right2 {
+  font-size: 15.68px;
+}
+
+/*
+  HINWEIS: Wenn keine deiner Änderungen wirksam wird,
+  können sie durch die in `animation.css` festgelegten Schriftgrößen überschrieben werden.
+
+  Kopiere in diesem Fall deine neuen Schriftgrößen aus dieser Datei
+  und füge sie in die entsprechenden `*_expand`-Keyframes ein.
+
+  Wenn du beispielsweise die Schriftgröße des
+  Distro-Symbols änderst, solltest du sie auch in
+  `distro_expand` aktualisieren.
+
+  - `distro_expand` für das Distro-Symbol (Zeile 143)
+  - `power_expand` für den Power-Button (Zeile 158)
+  - `module_expand` für alle anderen Module (Zeile 172)
+*/
+
+@import "animation.css";

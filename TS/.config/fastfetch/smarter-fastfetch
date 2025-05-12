@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Get terminal dimensions
+ROWS=$(tput lines)
+COLS=$(tput cols)
+
+# Select config based on exact dimensions
+CONFIG_DIR="$HOME/.config/fastfetch/configs"
+
+if [ "$ROWS" -ge 50 ] && [ "$COLS" -ge 180 ]; then
+    CONFIG="$CONFIG_DIR/full.jsonc"
+elif [ "$ROWS" -ge 50 ] && [ "$COLS" -le 95 ]; then
+    CONFIG="$CONFIG_DIR/vert_half.jsonc"
+elif [ "$ROWS" -le 26 ] && [ "$COLS" -ge 180 ]; then
+    CONFIG="$CONFIG_DIR/horiz_half.jsonc"
+else
+    CONFIG="$CONFIG_DIR/quarter.jsonc"
+fi
+
+# Run Fastfetch
+fastfetch --config "$CONFIG" "$@"
