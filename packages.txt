@@ -1,0 +1,1 @@
+rofi ttf-firacode-nerd hyprshot hyprpaper hyprlock hypridle waybar thunar tumbler ffmpegthumbnailer fastfetch-git noto-fonts-emoji rofimoji noto-fonts-cjk
