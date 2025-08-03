@@ -1,0 +1,13 @@
+/**
+ * Author: Evelynox
+ * Github: @Evelynox
+**/
+
+* {
+    background: #FEC2C8;
+    background-alt: #fda6b5;
+    foreground: #ff6699;
+    selected:rgb(255, 143, 171);
+    active: #ff66a3;
+    urgent: #ff0044;
+}

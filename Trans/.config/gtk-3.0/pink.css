@@ -1,0 +1,165 @@
+/* Pink Theme Variables */
+@define-color main_pink rgb(254, 194, 200);
+@define-color dark_pink rgb(150, 80, 100);
+@define-color border_pink rgb(200, 140, 160);
+@define-color button_pink rgb(240, 180, 190);
+@define-color accent_pink rgb(255, 210, 215);
+@define-color folder_pink rgb(220, 160, 170);
+@define-color search_pink rgb(255, 230, 235); /* neue Farbe für Suchleiste */
+@define-color rubberband_border rgb(180, 100, 130);
+@define-color rubberband_bg rgba(240, 180, 190, 0.3);
+
+/* Global Styling */
+* {
+    background-color: @main_pink;
+    color: @dark_pink;
+    font-family: "FiraCode Nerd Font", Sans;
+}
+
+/* Window and Frames */
+window, .window-frame {
+    background-color: @main_pink;
+    border: 1px solid @border_pink;
+}
+
+/* Buttons */
+button {
+    background-color: @button_pink;
+    color: @dark_pink;
+    border: 2px solid @border_pink;
+}
+
+button:hover {
+    background-color: @accent_pink;
+    border-color: @border_pink;
+}
+
+button:active {
+    background-color: @dark_pink;
+    color: @main_pink;
+    border-color: @dark_pink;
+}
+
+/* Entries and Text Fields (z. B. Suchleiste) */
+entry, textview {
+    background-color: @search_pink;
+    color: @dark_pink;
+    border: 1px solid @border_pink;
+}
+
+entry:focus, textview:focus {
+    border-color: @accent_pink;
+}
+
+/* Tree View and Sidebar */
+treeview, .sidebar {
+    background-color: @main_pink;
+    color: @dark_pink;
+}
+
+treeview:selected, treeview:selected:focus {
+    background-color: @button_pink;
+    color: @dark_pink;
+}
+
+/* Rubberband Selection (Auswahl mit Maus) */
+rubberband, .rubberband {
+    background-color: @rubberband_bg;
+    border: 1px solid @rubberband_border;
+    border-radius: 4px;
+}
+
+/* Folders */
+.folder {
+    background-color: @folder_pink;
+    color: @dark_pink;
+}
+
+/* Scrollbars */
+scrollbar slider {
+    background-color: @button_pink;
+}
+
+scrollbar trough {
+    background-color: @main_pink;
+}
+
+/* Selected Items */
+.view:selected {
+    background-color: @button_pink;
+    color: @dark_pink;
+}
+
+/* Thunar Specific */
+file-chooser-button {
+    background-color: @button_pink;
+    border: 1px solid @border_pink;
+}
+
+file-chooser-button:hover {
+    background-color: @accent_pink;
+}
+
+.toolbar {
+    background-color: @main_pink;
+    border-bottom: 1px solid @border_pink;
+}
+
+/* Paned Separators */
+paned > separator {
+    background-color: @border_pink;
+}
+
+/* Icon View */
+.icon-view {
+    background-color: @main_pink;
+    color: @dark_pink;
+}
+
+/* Menus */
+menu, menuitem {
+    background-color: @main_pink;
+    color: @dark_pink;
+    border: 1px solid @border_pink;
+}
+
+menuitem:hover {
+    background-color: @button_pink;
+}
+
+/* Tooltips */
+tooltip {
+    background-color: @button_pink;
+    color: @dark_pink;
+    border: 1px solid @border_pink;
+}
+
+/* Dialog Button Area - umfassender Fix */
+dialog button,
+.dialog-button-box button,
+.action-button,
+.button.default,
+.dialog-action-area button,
+.dialog-action-area > button,
+.dialog-button-box > button {
+    background-color: @button_pink;
+    color: @dark_pink;
+    border: 2px solid @border_pink;
+    box-shadow: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+dialog button:hover,
+.dialog-button-box button:hover,
+.dialog-action-area button:hover {
+    background-color: @accent_pink;
+}
+
+dialog button:active,
+.dialog-button-box button:active,
+.dialog-action-area button:active {
+    background-color: @dark_pink;
+    color: @main_pink;
+    border-color: @dark_pink;
+}
