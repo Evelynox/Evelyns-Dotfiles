@@ -1,4 +1,4 @@
-# Addiv's Dotfiles – Hyprland Themes
+# Evelyn's Dotfiles – Hyprland Themes
 
 A collection of custom desktop themes for Hyprland on Arch Linux.  
 Each theme is crafted with care to provide a visually cohesive, functional, and stylish Linux experience.  
@@ -23,7 +23,7 @@ Crafted for elegance, readability, and a cohesive feminine look – this setup b
 ### 📷 Screenshots
 
 ![Desktop Preview](screenshots/desktop1.png)  
-*Active Desktop with Addiv's Pink*
+*Active Desktop with Evelyn's Pink*
 
 ![Rofi Menu](screenshots/rofi1.png)  
 *Rofi menu with fully themed pink style*
@@ -73,5 +73,5 @@ All files for this theme follow the `*2.*` naming scheme, e.g. `hyprland.conf2`,
 
 ```bash
 # Clone the repository
-git clone https://github.com/Addiv420/addivs-dotfiles
-cd addivs-dotfiles
+git clone https://github.com/Evelynox/Evelyns-Dotfiles
+cd Evelyns-Dotfiles
