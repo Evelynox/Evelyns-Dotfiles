@@ -30,6 +30,6 @@
 @define-color power           #FEC2C8;
 
 /* Statusfarben */
-@define-color warning         #FEC2C8;
-@define-color critical        #FEC2C8;
+@define-color warning         #ffff00;
+@define-color critical        #ff0000;
 @define-color charging        #FEC2C8;

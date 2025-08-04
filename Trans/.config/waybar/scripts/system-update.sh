@@ -35,10 +35,9 @@ if [ "$1" == "up" ]; then
   trap 'pkill -RTMIN+20 waybar' EXIT
   command="
     $0 upgrade
-    ${aur_helper} -Syu
-    if pkg_installed flatpak; then flatpak update; fi
+    ${aur_helper} -Syu --noconfirm
+    if pkg_installed flatpak; then flatpak update --noninteractive; fi
     printf '\n'
-    read -n 1 -p 'Press any key to continue...'
     "
   kitty --title "󰞒  System Update" sh -c "${command}"
 fi

@@ -1,12 +1,15 @@
-/* Globale Stile */
 * {
-  background-color: rgb(54, 209, 252);
+  background-color: #36d1fc;
   font-family: "FiraCode Nerd Font", Sans;
   font-weight: bold;
+  font-size: 10px;
   min-height: 0;
   padding: 0;
-  border: none;
-  margin: 0;
+  /*border: 2px;*/
+  margin-top: -1px;
+  margin-bottom: -1px;
+  margin-left: 0;
+  margin-right: 0;
   color: #000000; /* Hauptfarbe für Text */
 }
 
@@ -26,25 +29,27 @@ window#waybar > box {
 
 /* === Tooltip === */
 tooltip {
-  background: rgb(54, 209, 252); /* Hauptfarbe für Tooltip-Hintergrund */
-  border: solid;
-  border-width: 1.5px;
+  background: #FEC2C8; /* Hauptfarbe für Tooltip-Hintergrund */
+  font-size: 14px;
+  border: 5px solid #36d1fc;
   border-radius: 8px;
-  border-color: rgb(54, 209, 252); /* Hauptfarbe für Tooltip-Rand */
 }
 tooltip label {
   color: #000000; /* Hauptfarbe für Tooltip-Text */
+  background: #FEC2C8;
   font-weight: normal;
-  margin: -1.5px 3px;
+  padding: 5px;
+  font-size: 14px;
 }
 
 /* === Workspace Buttons === */
 #workspaces button {
   color: #000000; /* Hauptfarbe für Button-Text */
-  background-color: #ffffff;
+  /*background-color: #FEC2C8;*/
+  border-color: #FEC2C8;
   border-radius: 8px;
   box-shadow: none;
-  margin: 2px 0;
+  margin: 0px 0;
   padding: 0 2px;
 }
 #workspaces button:hover {
@@ -52,8 +57,9 @@ tooltip label {
   background: rgba(54, 209, 252, 0.2); /* Leicht rosa Hintergrund beim Hovern */
 }
 #workspaces button.active {
-  color: rgb(54, 209, 252);
-  background-color: rgb(254, 194, 200); /* Etwas stärker rosa Hintergrund für aktive Buttons */
+  color: #ffffff;
+  background-color: #ffffff; /* Etwas stärker rosa Hintergrund für aktive Buttons */
+  border-color: #ffffff;
 }
 
 /* === Allgemein === */
@@ -118,7 +124,7 @@ tooltip label {
   padding-left: 2px;
 }
 #workspaces {
-  background: rgb(54, 209, 252);
+  background: #36d1fc;
 }
 #custom-right1 {
   color: rgb(54, 209, 252);
@@ -151,15 +157,16 @@ tooltip label {
   padding-left: 3px;
 }
 #memory {
+  color: #000000;
   background: rgb(254, 194, 200);
   padding-left: 1px;
   padding-right: 0;
 }
 #memory.warning {
-  color: rgb(254, 100, 100); /* Warnfarbe leicht angepasst */
+  color: #ffff00; /* Warnfarbe leicht angepasst */
 }
 #memory.critical {
-  color: rgb(254, 50, 50); /* Kritische Farbe noch deutlicher */
+  color: #ff0000; /* Kritische Farbe noch deutlicher */
 }
 
 /* == CPU == */
@@ -329,13 +336,13 @@ tooltip label {
   background: rgb(54, 209, 252);
 }
 #battery.warning {
-  color: rgb(254, 100, 100); /* Warnfarbe leicht angepasst */
+  color: rgb(255, 255, 0); /* Warnfarbe leicht angepasst */
 }
 #battery.critical {
-  color: rgb(254, 50, 50); /* Kritische Farbe noch deutlicher */
+  color: rgb(255, 0, 0); /* Kritische Farbe noch deutlicher */
 }
 #battery.charging {
-  color: rgb(200, 254, 200); /* Farbe für Ladevorgang */
+  color: rgb(0, 255, 0); /* Farbe für Ladevorgang */
 }
 
 /* == Power Button == */
@@ -361,23 +368,6 @@ tooltip label {
   box-shadow: none;
 }
 
-/* <<--< SCHRIFTGRÖSSEN >-->> */
-
-/*
-  Schriftgrößen für Module und Trennzeichen können problematisch sein.
-  Problematisch heißt, dass sie möglicherweise nicht richtig ausgerichtet sind,
-  wenn nur ganze Zahlen verwendet werden.
-
-  Wenn du sie ändern möchtest, solltest du nur
-  die ganzen Zahlen anpassen und die Dezimalstellen so lassen, wie sie sind,
-  es sei denn, du weißt, was du tust.
-*/
-
-/* Workspace-Symbol und -Buttons, Fenster- und Medientitel */
-* {
-  font-size: 10px;
-}
-
 /* Linke und rechte Pfeile */
 #custom-left1,
 #custom-left2,
@@ -392,7 +382,7 @@ tooltip label {
 #custom-right3,
 #custom-right4,
 #custom-right5 {
-  font-size: 14.68px;
+  font-size: 15.68px;
 }
 
 /* Linke und rechte Inverse */
@@ -413,21 +403,5 @@ tooltip label {
 #custom-right2 {
   font-size: 15.68px;
 }
-
-/*
-  HINWEIS: Wenn keine deiner Änderungen wirksam wird,
-  können sie durch die in `animation.css` festgelegten Schriftgrößen überschrieben werden.
-
-  Kopiere in diesem Fall deine neuen Schriftgrößen aus dieser Datei
-  und füge sie in die entsprechenden `*_expand`-Keyframes ein.
-
-  Wenn du beispielsweise die Schriftgröße des
-  Distro-Symbols änderst, solltest du sie auch in
-  `distro_expand` aktualisieren.
-
-  - `distro_expand` für das Distro-Symbol (Zeile 143)
-  - `power_expand` für den Power-Button (Zeile 158)
-  - `module_expand` für alle anderen Module (Zeile 172)
-*/
 
 @import "animation.css";
