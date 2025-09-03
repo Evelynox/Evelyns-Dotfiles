@@ -15,7 +15,7 @@ Each theme view is visible in the corresponding section below.
 ## 🎨 Themes
 
 <details>
-<summary><strong>🎀 Theme 1 – Addiv's Pink</strong></summary>
+<summary><strong>Theme 1 – Evelyn's Pink</strong></summary>
 
 A beautifully soft and fully pink desktop theme.  
 Crafted for elegance, readability, and a cohesive feminine look – this setup brings a cute yet functional aesthetic to your Linux experience.
@@ -43,9 +43,7 @@ All files for this theme follow the `*1.*` naming scheme, e.g. `hyprland.conf1`,
 </details>
 
 <details>
-<summary><strong>🌙 Theme 2 – [Name Placeholder]</strong></summary>
-
-*A short description of Theme 2 here.*
+<summary><strong>🌙 Theme 2 – Evelyn's Trans</strong></summary>
 
 ### 📷 Screenshots
 
