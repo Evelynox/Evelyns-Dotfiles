@@ -43,7 +43,7 @@ All files for this theme follow the `*1.*` naming scheme, e.g. `hyprland.conf1`,
 </details>
 
 <details>
-<summary><strong>🌙 Theme 2 – Evelyn's Trans</strong></summary>
+<summary><strong>Theme 2 – Evelyn's Trans</strong></summary>
 
 ### 📷 Screenshots
 
