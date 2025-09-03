@@ -73,3 +73,12 @@ All files for this theme follow the `*2.*` naming scheme, e.g. `hyprland.conf2`,
 # Clone the repository
 git clone https://github.com/Evelynox/Evelyns-Dotfiles
 cd Evelyns-Dotfiles
+```
+---
+
+## 📃 License
+[GNU General Public License v3.0](LICENSE.md)
+
+---
+
+Made with 🩷 by Evelynox
